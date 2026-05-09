@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    #menu { display: none; }
+    
+    header { justify-content: space-around; }
+
+    nav ul { 
+        display: flex !important; 
+        background: none; 
+        position: static;
+        width: auto;
+    }
+
+    nav a { padding: 0.5rem 1.5rem; }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .full-width { grid-column: 1 / span 2; }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+}
