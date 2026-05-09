@@ -4,7 +4,7 @@
     header { justify-content: space-around; }
 
     nav ul { 
-        display: flex !important; 
+        display: flex; 
         background: none; 
         position: static;
         width: auto;
