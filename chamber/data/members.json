@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Stardocks NIG/LTD",
+        "address": "Igando, Lagos State, Nigeria",
+        "phone": "+234 803 123 4567",
+        "website": "https://www.stardocks.com.ng",
+        "image": "images/stardocks.webp",
+        "MembershipType": "Standard",
+        "JoinDate": "2023-03-10"
+    },
+    {
+        "name": "Green Energy Solutions",
+        "address": "Lekki, Lagos State, Nigeria",
+        "phone": "+234 809 456 7890",
+        "website": "https://www.greenenergysolutions.com.ng",
+        "image": "images/green_energy.webp",
+        "MembershipType": "Premium",
+        "JoinDate": "2023-02-20"
+    },
+    {
+        "name": "HealthTech Innovations",
+        "address": "Yaba, Lagos State, Nigeria",
+        "phone": "+234 808 321 6543",
+        "website": "https://www.healthtechinnovations.com.ng",
+        "image": "images/healthtech.jpg",
+        "MembershipType": "Standard",
+        "JoinDate": "2023-04-05"
+    },
+    {
+        "name": "EduTech Solutions",
+        "address": "Ikeja, Lagos State, Nigeria",
+        "phone": "+234 807 654 3210",
+        "website": "https://www.edutechsolutions.com.ng",
+        "image": "images/edutech.webp",
+        "MembershipType": "Premium",
+        "JoinDate": "2023-01-30"
+    },
+    {
+        "name": "AgroTech Innovations",
+        "address": "Mushin, Lagos State, Nigeria",
+        "phone": "+234 806 789 0123",
+        "website": "https://www.agrotechinnovations.com.ng",
+        "image": "images/agrotech.webp",
+        "MembershipType": "Standard",
+        "JoinDate": "2023-03-25"
+    },
+    {
+        "name": "FinTech Solutions",
+        "address": "Surulere, Lagos State, Nigeria",
+        "phone": "+234 805 432 1098",
+        "website": "https://www.fintechsolutions.com.ng",
+        "image": "images/fintech.webp",
+        "MembershipType": "Premium",
+        "JoinDate": "2023-02-10"
+    },
+    {
+        "name": "Tech Innovators Hub",
+        "address": "Victoria Island, Lagos State, Nigeria",
+        "phone": "+234 804 567 8901",
+        "website": "https://www.techinnovatorshub.com.ng",
+        "image": "images/tech_innovators.webp",
+        "MembershipType": "Premium",
+        "JoinDate": "2023-01-20"
+    }
+]

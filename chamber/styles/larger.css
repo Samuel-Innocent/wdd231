@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    
+    #menu { 
+        display: none; 
+    }
+    
+    header { 
+        flex-wrap: nowrap; 
+    }
+
+    nav { width: auto; }
+
+    nav ul.navigation { 
+        display: flex; 
+        flex-direction: row;
+        background: none; 
+    }
+
+    nav a { 
+        padding: 0.5rem 1.5rem;
+        background-color: transparent; 
+        border: none;
+    }
+
+  
+    main {
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+
+    .list-view section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1.5fr 1fr; 
+        text-align: left;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+}

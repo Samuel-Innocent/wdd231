@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory - Lagos Chamber of Commerce</title>
+    <meta name="description" content="Official business directory for the Lagos Chamber of Commerce. Discover top businesses in Lagos State, Nigeria.">
+    <meta name="author" content="Samuel Innocent">
+    
+    <meta property="og:title" content="Lagos Business Directory">
+    <meta property="og:description" content="Explore local members of the Lagos Chamber of Commerce.">
+    <meta property="og:image" content="images/profile.jpeg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Lagos Chamber Logo" width="50" height="50">
+            <h1>Lagos Chamber</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-small">
+            <h1>Business Directory</h1>
+        </div>
+
+        <div class="view-toggle">
+            <button id="grid" title="Grid View">Grid View</button>
+            <button id="list" title="List View">List View</button>
+        </div>
+
+        <article id="members-container" class="grid-view">
+            </article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Lagos Chamber of Commerce</strong></p>
+            <p>Ikeja City Center, Lagos State, Nigeria</p>
+            <p>info@lagoscc.org.ng | +234 800 123 4567</p>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube Icon"></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter Icon"></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+        </div>
+
+        <div class="footer-meta">
+            <p>&copy;<span id="currentyear"></span> | Samuel Innocent | WDD 231 Class Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

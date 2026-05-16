@@ -1,0 +1,29 @@
+{
+    "Family name": "Innocent",
+    "date moved in": "15-05-2019",
+    "Number of records": 4,
+    "isVisitedByBishopric": true,
+    "Family members": [
+        {
+            "First name": "John",
+            "Age": 35,
+            "Occupation": "Engineer"
+        },
+        {
+            "First name": "Jane",
+            "Age": 32,
+            "Occupation": "Teacher"
+        },
+        {
+            "First name": "Emily",
+            "Age": 10,
+            "Occupation": "Student"
+        },
+        {
+            "First name": "Michael",
+            "Age": 8,
+            "Occupation": "Student"
+        }
+    ]
+
+}
