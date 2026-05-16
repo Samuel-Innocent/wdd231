@@ -14,6 +14,11 @@
     <meta property="og:type" content="website">
 
     <link rel="icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -23,7 +28,7 @@
     <header>
         <div class="logo-area">
             <img src="images/logo.svg" alt="Lagos Chamber Logo" width="50" height="50">
-            <h1>Lagos Chamber</h1>
+            <span class="site-title">Lagos Chamber</span>
         </div>
         <button id="menu" aria-label="Toggle Menu"></button>
         <nav>
@@ -37,17 +42,24 @@
     </header>
 
     <main>
-        <div class="hero-small">
-            <h1>Business Directory</h1>
-        </div>
+        <h1 class="page-title">Business Directory</h1>
 
-        <div class="view-toggle">
+        <section class="intro-section">
+            <h2 class="visually-hidden">Welcome</h2>
+            <p style="text-align: center; margin-top: 0;">Discover and connect with top organizations in Lagos State.</p>
+        </section>
+
+        <section class="view-toggle">
+            <h2 class="visually-hidden">Layout Options</h2>
             <button id="grid" title="Grid View">Grid View</button>
             <button id="list" title="List View">List View</button>
-        </div>
+        </section>
 
-        <article id="members-container" class="grid-view">
-            </article>
+        <section class="directory-list">
+            <h2 class="visually-hidden">Members</h2>
+            <div id="members-container" class="grid-view">
+                </div>
+        </section>
     </main>
 
     <footer>
