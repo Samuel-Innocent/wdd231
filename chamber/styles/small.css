@@ -6,9 +6,8 @@ body {
     color: #333;
 }
 
-
 header {
-    background-color: #0f2c59; /* Navy Blue */
+    background-color: #0f2c59;
     color: white;
     padding: 1rem;
     display: flex;
@@ -37,6 +36,11 @@ header {
 .page-title {
     text-align: center;
     margin-top: 2rem;
+}
+
+.intro-text {
+    text-align: center;
+    margin-top: 0;
 }
 
 .visually-hidden {
@@ -87,7 +91,6 @@ nav a {
 nav a:hover { background-color: #2a5298; }
 nav a.active { color: #f39c12; font-weight: bold; }
 
-
 .view-toggle {
     margin: 20px 0;
     text-align: center;
@@ -103,7 +106,6 @@ nav a.active { color: #f39c12; font-weight: bold; }
     margin: 0 5px;
     font-weight: bold;
 }
-
 
 .grid-view {
     display: grid;
@@ -126,7 +128,6 @@ nav a.active { color: #f39c12; font-weight: bold; }
     height: auto;
     margin-bottom: 15px;
 }
-
 
 .list-view {
     display: flex;
@@ -151,7 +152,6 @@ nav a.active { color: #f39c12; font-weight: bold; }
     font-weight: bold;
     color: #e67e22;
 }
-
 
 footer {
     background-color: #0f2c59;
