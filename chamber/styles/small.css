@@ -229,8 +229,17 @@ footer {
     font-weight: bold;
 }
 
-.cta-button:hover {
-    background-color: #d68910;
+.cta-button { display: inline-block; 
+    margin-top: 1rem; 
+    background-color: #0f2c59;
+     color: white; 
+     padding: 0.8rem 1.5rem; 
+     text-decoration: none; 
+     border-radius: 5px; 
+     font-weight: bold; 
+} 
+.cta-button:hover { 
+    background-color: #1a3c75; 
 }
 
 /* HOME GRID */
