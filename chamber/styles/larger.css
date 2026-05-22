@@ -36,3 +36,11 @@
         font-size: 1.1rem;
     }
 }
+
+.home-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+}

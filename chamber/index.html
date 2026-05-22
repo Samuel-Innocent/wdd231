@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Official Lagos Chamber of Commerce website supporting business growth, networking, and economic development in Lagos, Nigeria.">
+
+    <meta name="author" content="Samuel Innocent">
+
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:description" content="Empowering businesses and fostering economic growth in Lagos State.">
+    <meta property="og:image" content="images/lagos-hero.jpg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Lagos Chamber Logo" width="50" height="50">
+            <span class="site-title">Lagos Chamber</span>
+        </div>
+
+        <button id="menu" aria-label="Toggle Menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="images/lagos-hero.webp"
+                alt="Lagos city skyline"
+                loading="eager">
+
+            <div class="hero-content">
+                <h1>Empowering Lagos Businesses</h1>
+
+                <p>Connecting innovation, trade, and opportunity across Lagos State.</p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+            </div>
+        </section>
+
+        <section class="home-grid">
+
+            <section class="events card">
+                <h2>Current Events</h2>
+
+                <p><strong>Business Growth Summit 2026</strong></p>
+
+                <p>
+                    Join top entrepreneurs and business leaders in Lagos
+                    for networking, innovation, and investment opportunities.
+                </p>
+            </section>
+
+            <section class="weather card">
+                <h2>Weather</h2>
+
+                <div id="weather-info">
+                    <p>Loading weather...</p>
+                </div>
+
+                <div id="forecast"></div>
+            </section>
+
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlight-container" class="spotlight-grid"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-info">
+            <p><strong>Lagos Chamber of Commerce</strong></p>
+
+            <p>Ikeja City Center, Lagos State, Nigeria</p>
+
+            <p>info@lagoscc.org.ng | +234 800 123 4567</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                <img src="images/youtube.png" alt="YouTube Icon">
+            </a>
+
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="images/twitter.png" alt="Twitter Icon">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <p>
+                &copy;<span id="currentyear"></span>
+                | Samuel Innocent | WDD 231 Class Project
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+```

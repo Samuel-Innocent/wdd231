@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+#current-temp {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0078d4;
+}
+
+figure {
+    margin: 1rem 0 0 0;
+}
+
+figcaption {
+    text-transform: capitalize;
+    color: #555;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+footer {
+    font-size: 0.85rem;
+    color: #666;
+}
