@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .logo-area {
@@ -61,21 +61,29 @@ header {
     font-size: 2rem;
     cursor: pointer;
 }
-#menu::before { content: "☰"; }
-#menu.open::before { content: "✖"; }
 
-nav { width: 100%; }
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    width: 100%;
+}
 
 nav ul.navigation {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; 
+    display: none;
     flex-direction: column;
 }
 
 nav ul.navigation.show {
-    display: flex; 
+    display: flex;
 }
 
 nav a {
@@ -88,8 +96,14 @@ nav a {
     border-bottom: 1px solid #0f2c59;
 }
 
-nav a:hover { background-color: #2a5298; }
-nav a.active { color: #f39c12; font-weight: bold; }
+nav a:hover {
+    background-color: #2a5298;
+}
+
+nav a.active {
+    color: #f39c12;
+    font-weight: bold;
+}
 
 .view-toggle {
     margin: 20px 0;
@@ -120,7 +134,7 @@ nav a.active { color: #f39c12; font-weight: bold; }
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .grid-view img {
@@ -137,7 +151,7 @@ nav a.active { color: #f39c12; font-weight: bold; }
 
 .list-view section {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 15px;
@@ -145,8 +159,13 @@ nav a.active { color: #f39c12; font-weight: bold; }
     gap: 5px;
 }
 
-.list-view section:nth-child(even) { background-color: #f1f1f1; }
-.list-view img { display: none; } 
+.list-view section:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.list-view img {
+    display: none;
+}
 
 .membership {
     font-weight: bold;
@@ -161,7 +180,8 @@ footer {
     margin-top: 2rem;
 }
 
-.footer-info p, .footer-meta p {
+.footer-info p,
+.footer-meta p {
     margin: 5px 0;
     font-size: 0.9rem;
 }
@@ -178,6 +198,8 @@ footer {
     height: 35px;
 }
 
+/* HERO */
+
 .hero {
     position: relative;
 }
@@ -193,17 +215,11 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
-
     color: white;
-
     background-color: rgba(0, 0, 0, 0.6);
-
     padding: 1.5rem;
-
     border-radius: 8px;
-
     width: 85%;
 }
 
@@ -213,66 +229,41 @@ footer {
 
 .cta-button {
     display: inline-block;
-
     margin-top: 1rem;
-
-    background-color: #f39c12;
-
+    background-color: #0f2c59;
     color: white;
-
     padding: 0.8rem 1.5rem;
-
     text-decoration: none;
-
     border-radius: 5px;
-
     font-weight: bold;
 }
 
-.cta-button { display: inline-block; 
-    margin-top: 1rem; 
-    background-color: #0f2c59;
-     color: white; 
-     padding: 0.8rem 1.5rem; 
-     text-decoration: none; 
-     border-radius: 5px; 
-     font-weight: bold; 
-} 
-.cta-button:hover { 
-    background-color: #1a3c75; 
+.cta-button:hover {
+    background-color: #1a3c75;
 }
 
 /* HOME GRID */
 
 .home-grid {
     display: grid;
-
     grid-template-columns: 1fr;
-
     gap: 1rem;
-
     padding: 1rem;
 }
 
 .card {
     background-color: white;
-
     padding: 1.5rem;
-
     border-radius: 8px;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* WEATHER */
 
 #forecast {
     display: flex;
-
     justify-content: space-between;
-
     gap: 10px;
-
     margin-top: 1rem;
 }
 
@@ -284,26 +275,19 @@ footer {
 
 .spotlight-grid {
     display: grid;
-
     grid-template-columns: 1fr;
-
     gap: 1rem;
 }
 
 .spotlight-card {
     background-color: white;
-
     padding: 1rem;
-
     border-radius: 8px;
-
     text-align: center;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .spotlight-card img {
     width: 100px;
-
     height: auto;
 }
