@@ -1,10 +1,18 @@
-// Grab the URL string
-const currentUrl = window.location.href;
+const menuButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-// Parse the search parameters from the URL
+menuButton.addEventListener('click', () => {
+    navigation.classList.toggle('show');
+    menuButton.classList.toggle('open');
+});
+
+
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
+
+
 const urlParams = new URLSearchParams(window.location.search);
 
-// Helper function to inject data if it exists
 function displayData(paramKey, elementId) {
     const value = urlParams.get(paramKey);
     if (value) {
@@ -12,7 +20,6 @@ function displayData(paramKey, elementId) {
     }
 }
 
-// Inject the required fields into the HTML spans
 displayData('first-name', 'show-first');
 displayData('last-name', 'show-last');
 displayData('email', 'show-email');
