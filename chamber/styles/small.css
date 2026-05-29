@@ -43,6 +43,7 @@ header {
     margin-top: 0;
 }
 
+/* Fixed: Replaced deprecated clip with modern clip-path */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -50,7 +51,8 @@ header {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
     border: 0;
 }
 
@@ -199,7 +201,6 @@ footer {
 }
 
 /* HERO */
-
 .hero {
     position: relative;
 }
@@ -243,7 +244,6 @@ footer {
 }
 
 /* HOME GRID */
-
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -259,7 +259,6 @@ footer {
 }
 
 /* WEATHER */
-
 #forecast {
     display: flex;
     justify-content: space-between;
@@ -268,7 +267,6 @@ footer {
 }
 
 /* SPOTLIGHTS */
-
 .spotlights {
     padding: 1rem;
 }

@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-    
     #menu { 
         display: none; 
     }
@@ -22,7 +21,6 @@
         border: none;
     }
 
-  
     main {
         max-width: 1200px;
         margin: 0 auto; 
@@ -35,12 +33,13 @@
         align-items: center;
         font-size: 1.1rem;
     }
-}
 
-.home-grid {
-    grid-template-columns: 1fr 1fr;
-}
+    /* Fixed: Moved these inside the media query! */
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
-.spotlight-grid {
-    grid-template-columns: repeat(3, 1fr);
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
