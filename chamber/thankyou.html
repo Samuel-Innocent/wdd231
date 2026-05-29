@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Lagos Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Lagos Chamber Logo" width="50" height="50">
+            <span class="site-title">Lagos Chamber</span>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thank-you-main">
+        <h1>Thank You for Applying!</h1>
+        <p>We have received your membership application. Below is a summary of the information you provided.</p>
+        
+        <div class="submission-details card">
+            <h2>Application Summary</h2>
+            <p><strong>First Name:</strong> <span id="show-first"></span></p>
+            <p><strong>Last Name:</strong> <span id="show-last"></span></p>
+            <p><strong>Email:</strong> <span id="show-email"></span></p>
+            <p><strong>Mobile Phone:</strong> <span id="show-phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="show-business"></span></p>
+            <p><strong>Timestamp:</strong> <span id="show-timestamp"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Lagos Chamber of Commerce</strong></p>
+            <p>Ikeja City Center, Lagos State, Nigeria</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy;<span id="currentyear"></span> | Samuel Innocent | WDD 231 Class Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
