@@ -136,3 +136,21 @@ footer {
 .desktop-grid .wf-card {
     margin-bottom: 0; 
 }
+
+nav ul.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}

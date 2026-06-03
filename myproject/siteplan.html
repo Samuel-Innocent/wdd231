@@ -11,39 +11,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/siteplan.css">
+
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Project Site Plan</h1>
-        <h2>The Faceless Creator Toolkit</h2>
+        <div>
+            <h2>Faceless Creator Toolkit</h2>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hook Generator</a></li>
+                <li><a href="#">Resource Library</a></li>
+                <li><a href="#">Script Builder</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <h1>Project Site Plan</h1>
+
         <section>
-            <h3>1. Site Name</h3>
+            <h2>1. Site Name</h2>
             <p><strong>Name:</strong> Faceless Creator Toolkit</p>
             <p><strong>Reason:</strong> This name was selected because it immediately identifies the target audience (creators in the faceless niche) and clearly sets expectations for the utility of the site (a functional toolkit rather than just a blog). It is memorable and highly descriptive.</p>
             <p><strong>Domain Idea:</strong> facelesstoolkit.dev</p>
         </section>
 
         <section>
-            <h3>2. Site Purpose</h3>
+            <h2>2. Site Purpose</h2>
             <p>The purpose of this website is to provide a functional, three page informational dashboard designed to help content creators start and scale faceless storytelling channels. It will serve as a centralized hub providing services such as a dynamic background image search (via remote API), a curated database of attention grabbing video hooks, and a browser based script outline builder.</p>
         </section>
 
         <section>
-            <h3>3. Target Audience Scenarios</h3>
+            <h2>3. Target Audience Scenarios</h2>
             <ul>
-                <li>"Where can I find proven hooks to grab viewer attention in the first 5 seconds of my short form content?"</li>
+                <li>"Where can I find proven hooks to grab viewer attention in the first 5 seconds of my short-form content?"</li>
                 <li>"How can I structure a video script that keeps viewer retention high throughout a 10-minute storytelling video?"</li>
-                <li>"What type of background imagery should I pair with a mysterious, true crime storytelling script?"</li>
+                <li>"What type of background imagery should I pair with a mysterious, true-crime storytelling script?"</li>
             </ul>
         </section>
 
         <section>
-            <h3>4. Color Scheme</h3>
-            <p>The site utilizes a "Dark Mode Dashboard" theme to reflect the cinematic, behind the scenes nature of video editing and post production.</p>
+            <h2>4. Color Scheme</h2>
+            <p>The site utilizes a "Dark Mode Dashboard" theme to reflect the cinematic, behind-the-scenes nature of video editing and post-production.</p>
             <div class="color-palette">
                 <div class="color-swatch bg-primary">
                     <p><strong>Deep Charcoal</strong><br>#121212</p>
@@ -65,14 +79,14 @@
         </section>
 
         <section>
-            <h3>5. Typography</h3>
-            <p><strong>Heading Font:</strong> <em>'Montserrat', sans-serif</em>. This bold, geometric font provides a modern, tech-focused feel. It will be applied to all <code>h1</code>, <code>h2</code>, and <code>h3</code> elements.</p>
+            <h2>5. Typography</h2>
+            <p><strong>Heading Font:</strong> <em>'Montserrat', sans-serif</em>. This bold, geometric font provides a modern, tech-focused feel. It will be applied to all headings.</p>
             <p><strong>Body Font:</strong> <em>'Open Sans', sans-serif</em>. Highly legible on digital screens, making it perfect for the longer text sections required in the script builder and resource library. It will be applied to all paragraphs, lists, and form inputs.</p>
         </section>
 
         <section>
-            <h3>6. Wireframes</h3>
-            <p>Below are the structural wireframes for the Home Page..</p>
+            <h2>6. Wireframes</h2>
+            <p>Below are the structural wireframes for the Home Page.</p>
             
             <div class="wireframe-container">
                 <div class="wireframe mobile-wireframe">
@@ -103,7 +117,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 | Samuel Innocent | WDD 231 Project Site Plan</p>
+        <p>&copy; <span id="currentyear"></span> | Samuel Innocent | WDD 231 Project Site Plan</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
