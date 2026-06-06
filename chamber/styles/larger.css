@@ -48,3 +48,30 @@
         align-items: start;
     }
 }
+
+@media (min-width: 641px) {
+    .discover-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(0.8);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}
