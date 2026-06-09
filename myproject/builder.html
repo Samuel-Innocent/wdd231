@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Builder - Faceless Creator Toolkit</title>
+    <meta name="description" content="Draft and save your faceless YouTube video scripts.">
+    <meta name="author" content="Samuel Innocent">
+    
+    <meta property="og:title" content="Script Builder">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/builder.html">
+    
+    <!-- Favicon Package -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/builder.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
+            <h1>Faceless Toolkit</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html">Hook Generator</a></li>
+                <li><a href="builder.html" class="active">Script Builder</a></li>
+                <li><a href="suggest.html">Suggest Hook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="builder-main">
+        <div class="builder-layout">
+            <section class="script-editor">
+                <h2>The Script Builder</h2>
+                <p>Draft your script below. We will save it to your browser so you don't lose your work!</p>
+                
+                <label for="script-pad" class="visually-hidden">Script Text Area</label>
+                <textarea id="script-pad" placeholder="Start typing your video intro here..."></textarea>
+                
+                <div class="editor-controls">
+                    <button id="save-btn" class="btn-primary">Save Script</button>
+                    <button id="read-btn" class="btn-accent">🗣 Read Aloud</button>
+                    <button id="clear-btn" class="btn-danger">Clear</button>
+                </div>
+                
+                <p id="status-msg" class="status-text"></p>
+            </section>
+
+            <aside class="editing-checklist">
+                <h3>🎬 Editing Checklist</h3>
+                <p>Follow these rules for high retention:</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="check1">
+                        <label for="check1">Change visuals every 3-5 seconds</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check2">
+                        <label for="check2">Add "swoosh" SFX on transitions</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check3">
+                        <label for="check3">Keep background music under -20dB</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check4">
+                        <label for="check4">Match B-roll to the emotional tone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check5">
+                        <label for="check5">Add bold auto-captions for mobile</label>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <dialog id="tips-modal" style="border: none; border-radius: 8px; padding: 2rem; background: var(--secondary-bg); color: white; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+            <h3 style="color: var(--accent-color); margin-top: 0;">Pro Tip!</h3>
+            <p>Did you know? Scripts that ask a question in the first 3 seconds retain 15% more viewers.</p>
+            <button id="close-modal" class="btn-primary" style="width: 100%; margin-top: 15px;">Got it!</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
+            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+        </p>
+    </footer>
+</body>
+</html>

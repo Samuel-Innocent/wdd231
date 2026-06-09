@@ -1,0 +1,65 @@
+@media (min-width: 768px) {
+    #menu { 
+        display: none; 
+    }
+    
+    header { 
+        flex-wrap: nowrap; 
+        padding: 1rem 3rem;
+    }
+
+    nav { width: auto; }
+
+    nav ul.navigation { 
+        display: flex; 
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav a { 
+        padding: 0.5rem 1rem;
+        border: none;
+    }
+
+    .search-bar {
+        flex-direction: row;
+    }
+
+    .search-bar input {
+        flex-grow: 1;
+    }
+
+    .search-bar button {
+        width: 120px;
+    }
+    
+    .control-panel {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .control-panel select {
+        width: 60%;
+    }
+    
+    .control-panel button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .builder-main {
+        max-width: 1200px;
+    }
+
+    .builder-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .editing-checklist {
+        margin-top: 0;
+    }
+}

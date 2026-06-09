@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributions - Faceless Creator Toolkit</title>
+    <meta name="description" content="Resource attributions for the Faceless Creator Toolkit.">
+    <meta name="author" content="Samuel Innocent">
+    
+    <meta property="og:title" content="Attributions">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/attributions.html">
+    
+    <!-- Favicon Package -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script type="module">
+        import { setFooterDates, toggleMenu } from './scripts/utils.mjs';
+        setFooterDates();
+        toggleMenu();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
+            <h1>Faceless Toolkit</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html">Hook Generator</a></li>
+                <li><a href="builder.html">Script Builder</a></li>
+                <li><a href="suggest.html">Suggest Hook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="builder-main">
+        <section class="script-editor" style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <h2>Resource Attributions</h2>
+            <p>This project was built for educational purposes. We gratefully acknowledge the following external resources:</p>
+            
+            <div style="background-color: #2a2a2a; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: left;">
+                <h3 style="color: var(--accent-color); margin-top: 0;">Images & Photography</h3>
+                <p>All dynamic background imagery on the Home page is provided courtesy of the <strong><a href="https://www.pexels.com" target="_blank" style="color: #00BFFF;">Pexels API</a></strong>.</p>
+                <p>Pexels provides high-quality and completely free stock photos licensed under the Pexels license.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
+            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+        </p>
+    </footer>
+</body>
+</html>

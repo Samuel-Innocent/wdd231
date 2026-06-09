@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Faceless Creator Toolkit</title>
+    <meta name="description" content="A dashboard toolkit for faceless YouTube creators.">
+    <meta name="author" content="Samuel Innocent">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Faceless Creator Toolkit">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/">
+    
+    <!-- Favicon Package -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <!-- Updated Logo Image -->
+            <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
+            <h1>Faceless Toolkit</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="generator.html">Hook Generator</a></li>
+                <li><a href="builder.html">Script Builder</a></li>
+                <li><a href="suggest.html">Suggest Hook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="hero-section" class="hero-dynamic">
+        <section class="search-container">
+            <h2>Set the Vibe</h2>
+            <p>Search for a mood or niche to generate your dashboard background.</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="e.g., moody rain, cyberpunk city...">
+                <button id="search-btn">Search</button>
+            </div>
+            <p id="error-message" class="error-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
+            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+        </p>
+    </footer>
+</body>
+</html>

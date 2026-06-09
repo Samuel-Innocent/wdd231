@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook Generator - Faceless Creator Toolkit</title>
+    <meta name="description" content="Generate proven video hooks for your faceless YouTube channel.">
+    <meta name="author" content="Samuel Innocent">
+    
+    <meta property="og:title" content="Hook Generator">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
+    <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/generator.html">
+    
+    <!-- Favicon Package -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/generator.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
+            <h1>Faceless Toolkit</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generator.html" class="active">Hook Generator</a></li>
+                <li><a href="builder.html">Script Builder</a></li>
+                <li><a href="suggest.html">Suggest Hook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="generator-main">
+        <section class="generator-controls">
+            <h2>The Hook Generator</h2>
+            <p>Select a psychology angle to generate a proven video intro.</p>
+            
+            <div class="control-panel">
+                <label for="category-select" class="visually-hidden">Choose Category</label>
+                <select id="category-select">
+                    <option value="all">Surprise Me (All)</option>
+                    <option value="curiosity">Curiosity & Mystery</option>
+                    <option value="fear">Fear & Urgency</option>
+                    <option value="story">Storytelling Setup</option>
+                    <option value="value">High Value Promise</option>
+                </select>
+                <button id="generate-btn">Generate Hooks</button>
+            </div>
+        </section>
+
+        <section class="hook-display-area">
+            <h2 class="visually-hidden">Your Generated Hooks</h2>
+            <div id="hook-card-container" style="display: grid; gap: 1rem;">
+                <h3 style="text-align: center;">Click generate to load the database!</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
+            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+        </p>
+    </footer>
+</body>
+</html>

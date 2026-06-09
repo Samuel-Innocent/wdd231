@@ -1,0 +1,17 @@
+[
+    { "id": 1, "category": "curiosity", "hook": "Everyone is wrong about [Topic], here is proof.", "reason": "Creates an immediate information gap.", "difficulty": "Beginner" },
+    { "id": 2, "category": "curiosity", "hook": "I tried [Challenge] for 30 days. On day 7, it failed.", "reason": "Promises a journey and hints at conflict.", "difficulty": "Intermediate" },
+    { "id": 3, "category": "fear", "hook": "If you have [Item] in your house, watch this now.", "reason": "Leverages loss aversion and urgency.", "difficulty": "Beginner" },
+    { "id": 4, "category": "story", "hook": "In 1998, a man walked into a bank with no weapon...", "reason": "Establishes character, setting, and mystery.", "difficulty": "Advanced" },
+    { "id": 5, "category": "value", "hook": "This one free tool replaced my entire editing team.", "reason": "Promises immense, tangible value immediately.", "difficulty": "Beginner" },
+    { "id": 6, "category": "curiosity", "hook": "The dark secret behind [Popular Brand]'s success.", "reason": "Challenges a widely accepted public perception.", "difficulty": "Intermediate" },
+    { "id": 7, "category": "fear", "hook": "Stop doing [Habit] immediately. Here is why.", "reason": "Creates a sense of immediate personal danger.", "difficulty": "Beginner" },
+    { "id": 8, "category": "value", "hook": "How to learn [Skill] in 24 hours (Free Template).", "reason": "Offers a highly desirable outcome with a shortcut.", "difficulty": "Intermediate" },
+    { "id": 9, "category": "story", "hook": "He had $0 and a broken laptop. Now he makes $10k/mo.", "reason": "Classic rags-to-riches contrast.", "difficulty": "Beginner" },
+    { "id": 10, "category": "curiosity", "hook": "I found a hidden website that feels illegal to know.", "reason": "Taps into the desire for exclusive, forbidden knowledge.", "difficulty": "Beginner" },
+    { "id": 11, "category": "fear", "hook": "The next market crash is happening in 30 days.", "reason": "Time-sensitive warning about a major event.", "difficulty": "Advanced" },
+    { "id": 12, "category": "value", "hook": "5 hidden iPhone features you didn't know existed.", "reason": "Listicle format promising quick, actionable tips.", "difficulty": "Beginner" },
+    { "id": 13, "category": "story", "hook": "This is the most terrifying unsolved mystery of 2012.", "reason": "Sets a dark, intriguing tone for true crime.", "difficulty": "Advanced" },
+    { "id": 14, "category": "curiosity", "hook": "Why 99% of creators fail (and the 1% who don't).", "reason": "Uses statistics to create an 'us vs. them' dynamic.", "difficulty": "Intermediate" },
+    { "id": 15, "category": "value", "hook": "Copy and paste this exact script to get your first 1000 subs.", "reason": "Provides a literal 'done-for-you' solution.", "difficulty": "Beginner" }
+]
