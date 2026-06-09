@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hook Generator - Faceless Creator Toolkit</title>
-    <meta name="description" content="Generate proven video hooks for your faceless YouTube channel.">
+    <meta name="description" content="Generate proven video hooks for your faceless YouTube channel to capture audience attention instantly.">
     <meta name="author" content="Samuel Innocent">
     
     <meta property="og:title" content="Hook Generator">
@@ -12,7 +12,6 @@
     <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
     <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/generator.html">
     
-    <!-- Favicon Package -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -31,7 +30,7 @@
     <header>
         <div class="logo-area">
             <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
-            <h1>Faceless Toolkit</h1>
+            <div class="site-title">Faceless Toolkit</div>
         </div>
         <button id="menu" aria-label="Toggle Menu"></button>
         <nav>
@@ -45,10 +44,11 @@
     </header>
 
     <main class="generator-main">
+        <h1 class="visually-hidden">The Hook Generator Dashboard</h1>
+        
         <section class="generator-controls">
             <h2>The Hook Generator</h2>
             <p>Select a psychology angle to generate a proven video intro.</p>
-            
             <div class="control-panel">
                 <label for="category-select" class="visually-hidden">Choose Category</label>
                 <select id="category-select">
@@ -63,10 +63,15 @@
         </section>
 
         <section class="hook-display-area">
-            <h2 class="visually-hidden">Your Generated Hooks</h2>
-            <div id="hook-card-container" style="display: grid; gap: 1rem;">
-                <h3 style="text-align: center;">Click generate to load the database!</h3>
+            <h2>Your Generated Hooks</h2>
+            <div id="hook-card-container" class="grid-gap-1">
+                <h3 class="text-center">Click generate to load the database!</h3>
             </div>
+        </section>
+
+        <section class="generator-info">
+            <h2>Best Practices</h2>
+            <p>Deliver these hooks clearly and confidently within the first 3 seconds of your video for maximum viewer retention.</p>
         </section>
     </main>
 
@@ -74,8 +79,8 @@
         <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
         <p id="lastModified"></p>
         <p>
-            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
-            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+            <a href="attributions.html" class="footer-link">Attributions</a> | 
+            <a href="your_video_url_here" target="_blank" class="footer-link">🎥 View Video Demo</a>
         </p>
     </footer>
 </body>

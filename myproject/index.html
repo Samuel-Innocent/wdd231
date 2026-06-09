@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Faceless Creator Toolkit</title>
-    <meta name="description" content="A dashboard toolkit for faceless YouTube creators.">
+    <meta name="description" content="A comprehensive dashboard toolkit designed for faceless YouTube creators to generate hooks and build scripts.">
     <meta name="author" content="Samuel Innocent">
     
-    <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Faceless Creator Toolkit">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
     <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/">
     
-    <!-- Favicon Package -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -31,9 +29,8 @@
 <body>
     <header>
         <div class="logo-area">
-            <!-- Updated Logo Image -->
             <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
-            <h1>Faceless Toolkit</h1>
+            <div class="site-title">Faceless Toolkit</div>
         </div>
         <button id="menu" aria-label="Toggle Menu"></button>
         <nav>
@@ -48,6 +45,7 @@
 
     <main id="hero-section" class="hero-dynamic">
         <section class="search-container">
+            <h1>Faceless Creator Toolkit</h1>
             <h2>Set the Vibe</h2>
             <p>Search for a mood or niche to generate your dashboard background.</p>
             <div class="search-bar">
@@ -56,14 +54,24 @@
             </div>
             <p id="error-message" class="error-text"></p>
         </section>
+
+        <section class="info-section">
+            <h2>Why Go Faceless?</h2>
+            <p>Build a loyal audience and monetize your content without ever stepping in front of a camera. Leverage human psychology and high-quality B-roll.</p>
+        </section>
+
+        <section class="tools-section">
+            <h2>Your Dashboard Tools</h2>
+            <p>Use the Hook Generator to find proven viral angles, and map out your next hit using the Script Builder's retention checklist.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
         <p id="lastModified"></p>
         <p>
-            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
-            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+            <a href="attributions.html" class="footer-link">Attributions</a> | 
+            <a href="your_video_url_here" target="_blank" class="footer-link">🎥 View Video Demo</a>
         </p>
     </footer>
 </body>

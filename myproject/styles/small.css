@@ -25,11 +25,12 @@ header {
     border-bottom: 2px solid var(--accent-color);
 }
 
-.logo-area h1 {
+.site-title {
     font-family: var(--heading-font);
     color: var(--accent-color);
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 #menu {
@@ -81,30 +82,40 @@ nav a:hover, nav a.active {
     border: 0;
 }
 
+/* --- Dynamic Hero & Layout Sections --- */
 .hero-dynamic {
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     background-color: var(--primary-bg);
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease-in-out;
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
-.search-container {
+.search-container, .info-section, .tools-section {
     background-color: rgba(30, 30, 30, 0.85);
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     backdrop-filter: blur(5px);
 }
 
-.search-container h2 {
+.search-container h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-top: 0;
+    color: white;
+}
+
+.search-container h2, .info-section h2, .tools-section h2 {
     font-family: var(--heading-font);
     color: var(--accent-color);
     margin-top: 0;
@@ -153,6 +164,17 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Footer Links */
+.footer-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Generator Page --- */
 .generator-main {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -160,13 +182,18 @@ footer {
     min-height: 70vh;
 }
 
-.generator-controls {
+.generator-controls, .hook-display-area, .generator-info {
     text-align: center;
     background-color: var(--secondary-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     margin-bottom: 2rem;
+}
+
+.generator-controls h2, .hook-display-area h2, .generator-info h2 {
+    color: var(--accent-color);
+    margin-top: 0;
 }
 
 .control-panel {
@@ -183,52 +210,30 @@ footer {
     font-size: 1rem;
 }
 
-.control-panel select {
-    background-color: #333;
-    color: white;
-    border: 1px solid #555;
-}
+.control-panel select { background-color: #333; color: white; border: 1px solid #555; }
+.control-panel button { background-color: var(--accent-color); color: #121212; border: none; font-weight: bold; cursor: pointer; }
+.control-panel button:hover { background-color: #009acd; }
 
-.control-panel button {
-    background-color: var(--accent-color);
-    color: #121212;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.control-panel button:hover {
-    background-color: #009acd;
-}
-
-.hook-display-area .card {
+.card {
     background-color: #2a2a2a;
     border-left: 5px solid var(--accent-color);
     padding: 2rem;
     border-radius: 4px;
     transition: opacity 0.3s ease;
+    text-align: left;
 }
 
-.hook-display-area .card h3 {
+.card h3 {
     color: white;
     font-size: 1.3rem;
     font-style: italic;
     margin-top: 0;
 }
 
-.hook-display-area .card p {
-    color: #aaa;
-    margin-bottom: 0;
-}
+.card p { color: #aaa; margin-bottom: 0; }
+.hidden { opacity: 0; pointer-events: none; height: 0; padding: 0 !important; overflow: hidden; }
 
-.hidden {
-    opacity: 0;
-    pointer-events: none;
-    height: 0;
-    padding: 0 !important;
-    overflow: hidden;
-}
-
+/* --- Builder Page --- */
 .builder-main {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -236,14 +241,15 @@ footer {
     min-height: 70vh;
 }
 
-.script-editor {
+.script-editor, .editing-checklist, .builder-guidelines {
     background-color: var(--secondary-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
 }
 
-.script-editor h2 {
+.script-editor h2, .editing-checklist h2, .builder-guidelines h2 {
     color: var(--accent-color);
     margin-top: 0;
 }
@@ -264,79 +270,32 @@ footer {
     resize: vertical;
 }
 
-#script-pad:focus {
-    outline: 2px solid var(--accent-color);
-}
-
-.editor-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.editor-controls button {
-    flex: 1 1 150px;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-}
+.editor-controls { display: flex; flex-wrap: wrap; gap: 15px; }
+.editor-controls button { flex: 1 1 150px; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem; }
 
 .btn-primary { background-color: #4caf50; color: white; }
 .btn-primary:hover { background-color: #45a049; }
-
 .btn-accent { background-color: var(--accent-color); color: #121212; }
 .btn-accent:hover { background-color: #009acd; }
-
 .btn-danger { background-color: transparent; color: #ff4d4d; border: 1px solid #ff4d4d !important; }
 .btn-danger:hover { background-color: rgba(255, 77, 77, 0.1); }
+.status-text { margin-top: 15px; font-weight: bold; min-height: 1.5rem; }
 
-.status-text {
-    margin-top: 15px;
-    font-weight: bold;
-    min-height: 1.5rem;
-}
+.editing-checklist ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px; margin-top: 1.5rem; }
+.editing-checklist li { display: flex; align-items: center; gap: 10px; font-size: 1.05rem; }
+.editing-checklist input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent-color); cursor: pointer; }
+.editing-checklist label { cursor: pointer; color: var(--text-color); }
 
-.editing-checklist {
-    background-color: var(--secondary-bg);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    margin-top: 2rem;
-}
-
-.editing-checklist h3 {
-    color: var(--accent-color);
-    margin-top: 0;
-    font-size: 1.3rem;
-}
-
-.editing-checklist ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 1.5rem;
-}
-
-.editing-checklist li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.05rem;
-}
-
-.editing-checklist input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    accent-color: var(--accent-color);
-    cursor: pointer;
-}
-
-.editing-checklist label {
-    cursor: pointer;
-    color: var(--text-color);
-}
+/* --- Utility Classes (Replacing inline styles) --- */
+.text-center { text-align: center; }
+.capitalize-text { text-transform: capitalize; }
+.margin-top-15 { margin-top: 15px; }
+.margin-top-20 { margin-top: 20px; }
+.font-1-2 { font-size: 1.2rem; }
+.text-accent { color: var(--accent-color); }
+.w-100 { width: 100%; }
+.grid-gap-1 { display: grid; gap: 1rem; }
+.max-w-600 { max-width: 600px; margin: 0 auto; }
+.attribution-box { background-color: #2a2a2a; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: left; }
+.modal-style { border: none; border-radius: 8px; padding: 2rem; background: var(--secondary-bg); color: white; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+.modal-title { color: var(--accent-color); margin-top: 0; }

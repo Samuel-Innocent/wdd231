@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suggest a Hook - Faceless Creator Toolkit</title>
-    <meta name="description" content="Submit your own hook idea to the Faceless Creator Toolkit.">
+    <meta name="description" content="Submit your own proven hook idea to be featured in the Faceless Creator Toolkit database.">
     <meta name="author" content="Samuel Innocent">
     
     <meta property="og:title" content="Suggest a Hook">
@@ -12,7 +12,6 @@
     <meta property="og:image" content="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg">
     <meta property="og:url" content="https://samuel-innocent.github.io/wdd231/final/suggest.html">
     
-    <!-- Favicon Package -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -31,7 +30,7 @@
     <header>
         <div class="logo-area">
             <img src="images/logo.png" alt="Toolkit Logo" loading="lazy" width="30" height="30">
-            <h1>Faceless Toolkit</h1>
+            <div class="site-title">Faceless Toolkit</div>
         </div>
         <button id="menu" aria-label="Toggle Menu"></button>
         <nav>
@@ -45,17 +44,29 @@
     </header>
 
     <main class="builder-main">
+        <h1 class="visually-hidden">Submit a Hook Idea</h1>
+        
         <section class="script-editor">
             <h2>Suggest a Hook</h2>
-            <form action="thanks.html" method="get" class="search-bar" style="flex-direction: column;">
+            <form action="thanks.html" method="get" class="search-bar">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
                 
                 <label for="newhook">Your Hook Idea:</label>
                 <input type="text" id="newhook" name="newhook" required>
                 
-                <button type="submit" class="btn-primary" style="margin-top: 15px;">Submit Suggestion</button>
+                <button type="submit" class="btn-primary margin-top-15">Submit Suggestion</button>
             </form>
+        </section>
+
+        <section class="editing-checklist">
+            <h2>What We Look For</h2>
+            <p>Ensure your hook creates curiosity, addresses a specific fear, or provides immediate value to the viewer.</p>
+        </section>
+
+        <section class="builder-guidelines">
+            <h2>Review Process</h2>
+            <p>All submissions are reviewed by our team before being added to the live database.</p>
         </section>
     </main>
 
@@ -63,8 +74,8 @@
         <p>&copy; <span id="currentyear"></span> | Samuel Innocent | Faceless Creator Toolkit</p>
         <p id="lastModified"></p>
         <p>
-            <a href="attributions.html" style="color: var(--accent-color);">Attributions</a> | 
-            <a href="YOUR_VIDEO_URL_HERE" target="_blank" style="color: var(--accent-color);">🎥 View Video Demo</a>
+            <a href="attributions.html" class="footer-link">Attributions</a> | 
+            <a href="your_video_url_here" target="_blank" class="footer-link">🎥 View Video Demo</a>
         </p>
     </footer>
 </body>
