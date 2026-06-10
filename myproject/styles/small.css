@@ -70,7 +70,7 @@ nav a:hover, nav a.active {
     font-weight: 600;
 }
 
-.visually-hidden {
+.screen-reader-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -82,7 +82,6 @@ nav a:hover, nav a.active {
     border: 0;
 }
 
-/* --- Dynamic Hero & Layout Sections --- */
 .hero-dynamic {
     min-height: 80vh;
     display: flex;
@@ -164,7 +163,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Footer Links */
 .footer-link {
     color: var(--accent-color);
     text-decoration: none;
@@ -174,7 +172,6 @@ footer {
     text-decoration: underline;
 }
 
-/* --- Generator Page --- */
 .generator-main {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -214,7 +211,7 @@ footer {
 .control-panel button { background-color: var(--accent-color); color: #121212; border: none; font-weight: bold; cursor: pointer; }
 .control-panel button:hover { background-color: #009acd; }
 
-.card {
+.hook-item-box {
     background-color: #2a2a2a;
     border-left: 5px solid var(--accent-color);
     padding: 2rem;
@@ -223,17 +220,16 @@ footer {
     text-align: left;
 }
 
-.card h3 {
+.hook-item-box h3 {
     color: white;
     font-size: 1.3rem;
     font-style: italic;
     margin-top: 0;
 }
 
-.card p { color: #aaa; margin-bottom: 0; }
+.hook-item-box p { color: #aaa; margin-bottom: 0; }
 .hidden { opacity: 0; pointer-events: none; height: 0; padding: 0 !important; overflow: hidden; }
 
-/* --- Builder Page --- */
 .builder-main {
     padding: 2rem 1rem;
     max-width: 800px;
@@ -273,12 +269,13 @@ footer {
 .editor-controls { display: flex; flex-wrap: wrap; gap: 15px; }
 .editor-controls button { flex: 1 1 150px; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem; }
 
-.btn-primary { background-color: #4caf50; color: white; }
-.btn-primary:hover { background-color: #45a049; }
-.btn-accent { background-color: var(--accent-color); color: #121212; }
-.btn-accent:hover { background-color: #009acd; }
-.btn-danger { background-color: transparent; color: #ff4d4d; border: 1px solid #ff4d4d !important; }
-.btn-danger:hover { background-color: rgba(255, 77, 77, 0.1); }
+.action-btn-save { background-color: #2e7d32; color: white; }
+.action-btn-save:hover { background-color: #1b5e20; }
+.action-btn-read { background-color: var(--accent-color); color: #121212; }
+.action-btn-read:hover { background-color: #009acd; }
+.action-btn-clear { background-color: transparent; color: #ff4d4d; border: 1px solid #ff4d4d !important; }
+.action-btn-clear:hover { background-color: rgba(255, 77, 77, 0.1); }
+
 .status-text { margin-top: 15px; font-weight: bold; min-height: 1.5rem; }
 
 .editing-checklist ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px; margin-top: 1.5rem; }
@@ -286,16 +283,15 @@ footer {
 .editing-checklist input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent-color); cursor: pointer; }
 .editing-checklist label { cursor: pointer; color: var(--text-color); }
 
-/* --- Utility Classes (Replacing inline styles) --- */
-.text-center { text-align: center; }
-.capitalize-text { text-transform: capitalize; }
-.margin-top-15 { margin-top: 15px; }
-.margin-top-20 { margin-top: 20px; }
-.font-1-2 { font-size: 1.2rem; }
-.text-accent { color: var(--accent-color); }
-.w-100 { width: 100%; }
-.grid-gap-1 { display: grid; gap: 1rem; }
-.max-w-600 { max-width: 600px; margin: 0 auto; }
+.align-center-layout { text-align: center; }
+.format-capitalize-text { text-transform: capitalize; }
+.spacing-top-small { margin-top: 15px; }
+.spacing-top-medium { margin-top: 20px; }
+.text-size-large { font-size: 1.2rem; }
+.color-accent-text { color: var(--accent-color); }
+.width-maximum { width: 100%; }
+.custom-grid-container { display: grid; gap: 1rem; }
+.constrained-width { max-width: 600px; margin: 0 auto; }
 .attribution-box { background-color: #2a2a2a; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: left; }
 .modal-style { border: none; border-radius: 8px; padding: 2rem; background: var(--secondary-bg); color: white; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
 .modal-title { color: var(--accent-color); margin-top: 0; }

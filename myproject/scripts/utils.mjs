@@ -1,4 +1,3 @@
-// Exporting a function to satisfy the ES Module requirement
 export function setFooterDates() {
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;

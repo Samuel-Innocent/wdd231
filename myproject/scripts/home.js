@@ -1,4 +1,3 @@
-// --- Hamburger Menu Logic ---
 const menuButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -7,12 +6,9 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('open');
 });
 
-// --- Dynamic Footer Dates ---
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// --- Pexels API Logic ---
-// IMPORTANT: Paste your free Pexels API key inside the quotes below
 const PEXELS_API_KEY = 'uXwzkGGLcF8chzW91DDfV4k9iG0sx4kju5eGP7LbE01YVQjM0d1lmKcb'; 
 
 const searchBtn = document.getElementById('search-btn');
@@ -21,7 +17,6 @@ const heroSection = document.getElementById('hero-section');
 const errorMessage = document.getElementById('error-message');
 
 searchBtn.addEventListener('click', async () => {
-    // Clear previous error messages
     errorMessage.textContent = '';
     
     const query = searchInput.value.trim() || 'cinematic dark'; 

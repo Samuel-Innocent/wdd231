@@ -25,10 +25,10 @@ function displayHooks(hooks) {
     hookContainer.innerHTML = ''; 
     hooks.forEach(item => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'hook-item-box';
         card.innerHTML = `
             <h3>"${item.hook}"</h3>
-            <p><strong>Category:</strong> <span class="capitalize-text">${item.category}</span></p>
+            <p><strong>Category:</strong> <span class="format-capitalize-text">${item.category}</span></p>
             <p><strong>Why it works:</strong> ${item.reason}</p>
             <p><strong>Difficulty:</strong> ${item.difficulty}</p>
         `;
